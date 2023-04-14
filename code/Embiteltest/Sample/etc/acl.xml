@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+
+            <resource id="Magento_Backend::admin">
+                <resource id="Embiteltest_Sample::sample" title="sample" translate="title" sortOrder="21">
+
+                    <resource id="Embiteltest_Sample::sample2" title="Save Sample" translate="title" sortOrder="21"/>
+                </resource>
+            </resource>
+
+        </resources>
+    </acl>
+</config>
+

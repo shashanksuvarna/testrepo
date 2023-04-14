@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    
+    <table name="user_login">
+        <column xsi:type="int" name="id" padding="10" nullable="false" identity="true" comment="ID" />
+        <column xsi:type="int" name="empid" padding="10" nullable="false" comment="ID" />
+        <column xsi:type="varchar" name="fname" length="100" nullable="false" comment="first name" />
+        <column xsi:type="varchar" name="lname" length="100" nullable="false" comment="last name" />
+        <column xsi:type="varchar" name="email" length="100" nullable="false" comment="e-mail" />
+        <column xsi:type="varchar" name="company" length="100" nullable="false" comment="company name" />
+        <column xsi:type="varchar" name="department" length="100" nullable="false" comment="Department" />
+        <column xsi:type="varchar" name="occupation" length="100" nullable="false" comment="occupation" />
+        <column xsi:type="int" name="phone" length="100" nullable="false" comment="phone number" />
+        <column xsi:type="varchar" name="Address" length="100" nullable="false" comment="Address" />
+        <column xsi:type="varchar" name="dob" length="100" nullable="false" comment="date of birth" />
+        <column xsi:type="varchar" name="doj" length="100" nullable="false" comment="date of join" />        
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id" />
+        </constraint>
+    </table>
+</schema>

@@ -1,0 +1,9 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+
+    <router id="admin">
+        <route id="sample" frontName="sample"> <!-- front name is controller name-->
+            <module name="Embiteltest_Sample" before="Magneto_Backend"/>
+        </route>
+    </router>
+</config>

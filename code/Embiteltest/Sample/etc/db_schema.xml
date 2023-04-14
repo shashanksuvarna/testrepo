@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+
+<table name="sample" resource="default" engine="innodb" comment="sample table">
+
+
+        <column xsi:type="int" name="sample_id" padding="10" nullable="false" identity="true" comment="ID" />
+        <column xsi:type="varchar" name="fname" length="100" nullable="false" comment="first name" />
+        <column xsi:type="varchar" name="lname" length="100" nullable="false" comment="last name" />
+        <column xsi:type="varchar" name="email" length="100" nullable="false" comment="e-mail" />
+        <column xsi:type="varchar" name="dob" length="100" nullable="false" comment="date of birth" />       
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="sample_id" />
+        </constraint>
+
+
+    <!-- <index referenceId="CATALOG_PRODUCT_ENTITY_DATETIME_ATTRIBUTE_ID" indexType="btree">
+        <column name="attribute_id"/>
+    </index>
+    <index referenceId="CATALOG_PRODUCT_ENTITY_DATETIME_STORE_ID" indexType="btree">
+        <column name="store_id"/>
+    </index> -->
+
+</table>
+</schema>

@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+   
+    <route method="GET" url="/V1/manageremployee/data">
+        <service class="Manager\Employee\Api\TestActionManagementInterface" method="getProfile"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route method="GET" url="/V1/manageremployee/userdata">
+        <service class="Manager\Employee\Api\TestActionManagementInterface" method="getCustomerList"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route method="POST" url="/V1/manageremployee/usergroup">
+        <service class="Manager\Employee\Api\Post" method="getCustomerGroup"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+</routes>

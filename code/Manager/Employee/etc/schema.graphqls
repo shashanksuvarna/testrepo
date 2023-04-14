@@ -1,0 +1,28 @@
+type Query {
+    pickupStores:pickupStoresOutput @resolver(class : "Manager\\Employee\\Model\\Resolver\\Store") @doc(description: "List of Pickup stores.")
+}
+type pickupStoresOutput {
+    total_count:Int @doc(description: "total stores"),
+    item:[pickupStore] @doc(description : "stores data")
+}
+type pickupStore {
+    firstname:String @doc(description : "store name"),
+    lastname:String @doc(description : "store street"),
+    email:String @doc(description : "store postcode"),
+    mobile:String @doc(description : "store mobile"),
+}
+
+
+type Mutation {
+    addDetails (input: detailsInput! @doc(description:"An input you have to fill")):
+    addDetailsOutput @resolver(class:"Manager\\Employee\\Model\\Resolver\\Display")
+    @doc(description:"Output of Mutation")
+}
+
+input detailsInput {
+    groupName:String! @doc(description:"Enter the groupName")
+}
+
+type addDetailsOutput {
+    groupName:String @doc(description:"message of mutation")
+}

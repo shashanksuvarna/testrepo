@@ -1,0 +1,20 @@
+{
+    "user_login": {
+        "column": {
+            "empid": true,
+            "fname": true,
+            "lname": true,
+            "email": true,
+            "company": true,
+            "department": true,
+            "occupation": true,
+            "phone": true,
+            "Address": true,
+            "dob": true,
+            "doj": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
